@@ -1,0 +1,20 @@
+# CLion IDE files
+.idea/
+cmake-build-debug/
+CMakeLists.txt.user
+
+# Compiled files
+*.exe
+*.o
+*.out
+*.so
+*.dylib
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
