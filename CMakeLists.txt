@@ -10,5 +10,4 @@ add_executable(StudentGradeTracker src/main.cpp
         src/calculation.cpp
         src/input.cpp
         include/input.h
-        src/storage.cpp
-        tests/test_calculation.cpp)
+        src/storage.cpp)
