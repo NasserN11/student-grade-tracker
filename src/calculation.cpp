@@ -21,3 +21,24 @@ double gradeToPoint(const string& letterGrade) {
     else if (grade == "NA") { return 0.00; }
     else { return -1; }
 }
+
+double calculateGPA(const vector<Course>& courses) {
+
+    if (courses.empty()) { return 0.0; }
+
+    double totalPoints = 0.0;
+    int totalCredits = 0;
+
+    for (const auto& course : courses) {
+        double points = 0.0;
+        points = gradeToPoint(course.courseGrade);
+
+        if (points >= 0) {
+            totalPoints += (points * course.courseCredit);
+            totalCredits += course.courseCredit;
+        }
+    }
+
+    if (totalCredits == 0) { return 0.0; }
+    return totalPoints / totalCredits;
+}

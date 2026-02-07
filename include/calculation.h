@@ -2,18 +2,21 @@
 #define STUDENTGRADETRACKER_CALCULATION_H
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
 struct Course {
-    string course_name;
-    string course_grade;
-    int course_credit;
+    string courseName;
+    string courseGrade;
+    int courseCredit;
 
 
 };
 
 double gradeToPoint(const string& letterGrade);
+
+double calculateGPA(const vector<Course>& courses);
 
 
 #endif //STUDENTGRADETRACKER_CALCULATION_H
