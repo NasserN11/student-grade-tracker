@@ -18,5 +18,11 @@ double gradeToPoint(const string& letterGrade);
 
 double calculateGPA(const vector<Course>& courses);
 
+bool isValidGrade (const string& grade);
+
+bool isValidCredits(int credits);
+
+bool validateCourse(const Course& course);
+
 
 #endif //STUDENTGRADETRACKER_CALCULATION_H
