@@ -1,13 +1,19 @@
-//
-// Created by nasse on 2/4/2026.
-//
-
 #ifndef STUDENTGRADETRACKER_INPUT_H
 #define STUDENTGRADETRACKER_INPUT_H
 
+#include <string>
 
-class input {
-};
+using namespace std;
+
+void pressEnterToContinue();
+
+void printHeader(const string& title);
+
+void clearScreen();
+
+string getCourseGrade();
+
+int getCourseCredits();
 
 
 #endif //STUDENTGRADETRACKER_INPUT_H
