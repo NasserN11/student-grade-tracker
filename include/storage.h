@@ -11,5 +11,7 @@ string getDefaultFileName();
 
 bool saveCourses(const vector<Course> &courses, const string& filename);
 
+bool loadCourses(vector<Course>& course, const string& filename);
+
 
 #endif //STUDENTGRADETRACKER_STORAGE_H
